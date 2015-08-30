@@ -8,7 +8,7 @@ class RouteTest extends TestCase {
 	/**
 	 *
      */
-	public function getHome()
+	public function testHome()
 	{
 		$response = $this->call('GET', '/');
 		$this->assertEquals(200, $response->getStatusCode());
@@ -17,7 +17,7 @@ class RouteTest extends TestCase {
 	/**
 	 *
      */
-	public function getMacros()
+	public function testMacros()
 	{
 		$response = $this->call('GET', '/macros');
 		$this->assertEquals(200, $response->getStatusCode());
